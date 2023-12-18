@@ -3,7 +3,7 @@ import { Alert, Box, Button, Grid, Paper, TextField, Typography, styled } from '
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import validation from '../validation/LoginValidation';
-import Image from './login.avif';
+import Image from './login.jpg';
 
 const Wrapper = styled(Box)`
   padding:10px 150px;
@@ -134,7 +134,8 @@ const Login = () => {
               width: '100%',
               height: '100%',
               maxWidth: '100%',
-              maxHeight: '100%'
+              maxHeight: '100%',
+              objectFit:'cover'
             }} src={Image} alt='Login'/>
         </Paper>
       </Grid>

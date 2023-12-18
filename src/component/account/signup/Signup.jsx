@@ -2,7 +2,7 @@ import { Box, Button, TextField, Typography, styled, Grid, Paper } from '@mui/ma
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import Image from './signup.avif'
+import Image from './signup.jpg'
 import validation from '../validation/SignupValidation';
 import Alert from '@mui/material/Alert';
 
@@ -154,7 +154,8 @@ const Signup = () => {
                             width: '100%',
                             height: '100%',
                             maxWidth: '100%',
-                            maxHeight: '100%'
+                            maxHeight: '100%',
+                            objectFit:'cover'
                         }} src={Image} alt='Sign up'/>
                 </Paper>
             </Grid>
